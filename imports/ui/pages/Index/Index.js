@@ -75,7 +75,7 @@ const StyledIndex = styled.div`
 const Index = () => (
 
   <div>
-    Put Homepage Here
+    Put Homepage Here Licious is piciois
   </div>
   // <StyledIndex>
   //   <img
