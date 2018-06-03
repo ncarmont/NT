@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Pup
 A boilerplate for products.
 
@@ -6,3 +7,6 @@ A boilerplate for products.
 ---
 
 Need help and want to stay accountable building your product? [Check out Clever Beagle](http://cleverbeagle.com).
+=======
+# NT
+>>>>>>> origin/master
