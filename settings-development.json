@@ -7,7 +7,7 @@
     "productAddress": "Licious 22, Budbuds St."
   },
   "private": {
-    "MAIL_URL": "",
+    "MAIL_URL": "smtp://username:password@hostname.com:587",
     "OAuth": {
       "facebook": {
         "enabled": true,
@@ -28,6 +28,6 @@
         "loginStyle": "popup"
       }
     },
-    "supportEmail": "Customer Support <support@product.com>"
+    "supportEmail": "Customer Support <support@NovaTerra.com>"
   }
 }

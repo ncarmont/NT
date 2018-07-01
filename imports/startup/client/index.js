@@ -48,7 +48,7 @@ injectGlobal`
     position: relative;
     min-height: 100%;
   }
-  
+
   body {
     margin-bottom: 80px;
     margin: 0;
@@ -62,6 +62,8 @@ injectGlobal`
     border-left: none;
     border-right: none;
     border-top: none;
+    background:#fff;
+    border:none;
   }
 
   form label {
@@ -90,6 +92,10 @@ injectGlobal`
       margin-top: 20px;
     }
   }
+a:hover {
+border:none;
+text-decoration:none;
+}
 `;
 
 const theme = {};
