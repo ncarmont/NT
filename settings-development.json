@@ -6,7 +6,7 @@
     "facebookUsername": "product",
     "productAddress": "Licious 22, Budbuds St."
   },
-  "private": {
+   "private": {
     "MAIL_URL": "smtp://username:password@hostname.com:587",
     "OAuth": {
       "facebook": {
@@ -17,14 +17,8 @@
       },
       "google": {
         "enabled": true,
-        "clientId": "",
-        "secret": "",
-        "loginStyle": "popup"
-      },
-      "github": {
-        "enabled": true,
-        "clientId": "",
-        "secret": "",
+        "clientId": "657804519674-u48aroh6m63cl5tlmtk3e15kp2otbu49.apps.googleusercontent.com",
+        "secret": "YTTj5YcAAXYuOs5UUyw_8d_7",
         "loginStyle": "popup"
       }
     },

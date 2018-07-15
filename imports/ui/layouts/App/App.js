@@ -13,10 +13,10 @@ import Navigation from '../../components/Navigation/Navigation';
 import Authenticated from '../../components/Authenticated/Authenticated';
 import Public from '../../components/Public/Public';
 import Index from '../../pages/Index/Index';
-import Documents from '../../pages/Documents/Documents';
-import NewDocument from '../../pages/NewDocument/NewDocument';
-import ViewDocument from '../../pages/ViewDocument/ViewDocument';
-import EditDocument from '../../pages/EditDocument/EditDocument';
+import Articles from '../../pages/Articles/Articles';
+import NewArticle from '../../pages/NewArticle/NewArticle';
+import ViewArticle from '../../pages/ViewArticle/ViewArticle';
+import EditArticle from '../../pages/EditArticle/EditArticle';
 import Signup from '../../pages/Signup/Signup';
 import Login from '../../pages/Login/Login';
 import Logout from '../../pages/Logout/Logout';
@@ -96,10 +96,10 @@ class App extends React.Component {
         <Grid>
           <Switch>
             <Route exact name="index" path="/" component={Index} />
-            <Authenticated exact path="/documents" component={Documents} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
-            <Authenticated exact path="/documents/new" component={NewDocument} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
-            <Route exact path="/documents/:_id" component={ViewDocument} />
-            <Authenticated exact path="/documents/:_id/edit" component={EditDocument} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
+            <Authenticated exact path="/articles" component={Articles} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
+            <Authenticated exact path="/articles/new" component={NewArticle} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
+            <Route exact path="/articles/:_id" component={ViewArticle} />
+            <Authenticated exact path="/articles/:_id/edit" component={EditArticle} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Authenticated exact path="/profile" component={Profile} setAfterLoginPath={setAfterLoginPath} {...props} {...state} />
             <Public path="/signup" component={Signup} {...props} {...state} />
             <Public path="/login" component={Login} {...props} {...state} />

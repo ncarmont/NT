@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+
 import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 
@@ -14,3 +16,36 @@ Articles.deny({
   update: () => true,
   remove: () => true,
 });
+
+Articles.schema = new SimpleSchema({
+  author: {
+    type: String,
+    label: 'The ID of the user this article belongs to.',
+  },
+  createdAt: {
+    type: String,
+    label: 'The date this article was created.',
+    autoValue() {
+      if (this.isInsert) return (new Date()).toISOString();
+    },
+  },
+  updatedAt: {
+    type: String,
+    label: 'The date this article was last updated.',
+    autoValue() {
+      if (this.isInsert || this.isUpdate) return (new Date()).toISOString();
+    },
+  },
+  title: {
+    type: String,
+    label: 'The title of the article.',
+  },
+  htmlBody: {
+    type: String,
+    label: 'The html body of the article.',
+  },
+});
+
+Articles.attachSchema(Articles.schema);
+
+export default Articles;

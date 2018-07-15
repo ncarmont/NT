@@ -1,5 +1,5 @@
-import '../../api/Documents/server/indexes';
-import '../../api/Documents/server/publications';
+import '../../api/Articles/server/indexes';
+import '../../api/Articles/server/publications';
 
 import '../../api/OAuth/server/methods';
 

@@ -55,14 +55,13 @@ const NavigationStyles = styled.div `
 `;
 
 
-
 const Navigation = props => (
   <NavigationStyles>
   <Navbar collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-         <Link to="/"><div class="navSmallLabels1">About</div></Link>
-         <Link to="/"><div class="navSmallLabels2">Get Involved</div></Link>
+         <Link to="/"><div className="navSmallLabels1">About</div></Link>
+         <Link to="/"><div className="navSmallLabels2">Get Involved</div></Link>
         <Link to="/"><img src="favicon.png" id="topNavImage"/></Link>
       </Navbar.Brand>
       <Navbar.Toggle />
